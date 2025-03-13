@@ -1,16 +1,19 @@
 /* TODO: Optimize this */
-img[class*="lazyImg_" i],
-img[alt="Image"][src*="attachments"],
-img[src*="/external/"],
-img[class*="stickerAsset"],
-img.emoji.jumboable,
-[class*="reactionInner"],
-[class*="embedVideoImageComponentInner"],
-video[class*="embedMedia"] {
-    filter: blur(20px) brightness(0.25);
+[class*="messagesWrapper"] {
+  img,
+  video {
+   	filter: blur(10px) brightness(0.5); 
+  }
 }
 
 /* Blur them less so you can tell people apart */
 img[class*="avatar_"] {
     filter: blur(6px) brightness(0.5);
+}
+
+/* Server sidebar header image */
+[class*="sidebar"] {
+    img {
+        filter: blur(10px) brightness(0.5);
+    }
 }
