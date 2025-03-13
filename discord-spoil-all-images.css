@@ -1,15 +1,16 @@
-a.originalLink_af017a[href][data-role="img"][data-safe-src] {
-    filter: blur(10px) brightness(0.5);
-    ::after {
-        content: "Hidden";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-shadow: 0 0 5px black;
-        z-index: 100;
-    }
+/* TODO: Optimize this */
+img[class*="lazyImg_" i],
+img[alt="Image"][src*="attachments"],
+img[src*="/external/"],
+img[class*="stickerAsset"],
+img.emoji.jumboable,
+[class*="reactionInner"],
+[class*="embedVideoImageComponentInner"],
+video[class*="embedMedia"] {
+    filter: blur(20px) brightness(0.25);
+}
+
+/* Blur them less so you can tell people apart */
+img[class*="avatar_"] {
+    filter: blur(6px) brightness(0.5);
 }
