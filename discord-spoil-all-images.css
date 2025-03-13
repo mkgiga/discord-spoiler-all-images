@@ -1,3 +1,10 @@
+/**
+ * discord-spoil-all-images.css
+ * author: mkgiga
+ * date: 2025-03-13
+ * version: 1.0
+ */
+
 /* TODO: Optimize this */
 [class*="messagesWrapper"] {
   img,
