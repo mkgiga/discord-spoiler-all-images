@@ -9,13 +9,13 @@
 [class*="messagesWrapper"] {
   img,
   video {
-   	filter: blur(10px) brightness(0.5); 
+   	filter: blur(30px) brightness(0.5); 
   }
 }
 
 /* Blur them less so you can tell people apart */
 img[class*="avatar_"] {
-    filter: blur(6px) brightness(0.5);
+    filter: blur(6px) brightness(0.5) !important;
 }
 
 /* Server sidebar header image */
